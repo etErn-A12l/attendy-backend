@@ -104,10 +104,6 @@ public class Student {
         return password;
     }
 
-//    public void setPassword(String password) {
-//        this.password = password;
-//    }
-
     public void setPassword(String password) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -124,6 +120,5 @@ public class Student {
             throw new RuntimeException(e);
         }
     }
-
 
 }
