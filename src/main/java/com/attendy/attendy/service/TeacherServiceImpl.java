@@ -1,6 +1,5 @@
 package com.attendy.attendy.service;
 
-import com.attendy.attendy.entity.Student;
 import com.attendy.attendy.entity.Teacher;
 import com.attendy.attendy.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,5 +31,10 @@ public class TeacherServiceImpl implements TeacherService{
     @Override
     public void deleteTeacher(Long id) {
         teacherRepository.deleteById(id);
+    }
+
+    @Override
+    public Teacher findByEmail(String email) {
+        return teacherRepository.findByEmail(email);
     }
 }
