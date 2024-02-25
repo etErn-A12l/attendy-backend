@@ -17,6 +17,9 @@ public class Attendance {
 
     @CreationTimestamp
     private Date date;
+
+    // TODO: add time data
+
     private Long studentId;
     private boolean isPresent;
     private String stream;

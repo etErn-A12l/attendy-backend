@@ -9,4 +9,5 @@ public interface StudentService {
     Student getStudentById(Long id);
     Student saveStudent(Student student);
     void deleteStudent(Long id);
+    Student findByEmail(String email);
 }
